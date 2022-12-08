@@ -15,7 +15,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    color: $secondary-text-color;
+    color: var(--secondary-text-color);
    }
    .input-line {
   display: inline-block;
@@ -100,12 +100,12 @@
     align-items: center;
     width: 16px;
     height: 15px;
-    border: 2px solid  $secondary-text-color;
+    border: 2px solid  var(--secondary-text-color);
     border-radius: 2px;
     margin-right: 8px;
    }
    .check-line input:checked + .checkbox-agree::before {
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     border: none;
     background-image: url(../img/Vector6.svg);
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@
    .link-modal {
     font-family: 'Roboto';
     font-style: normal;
-    color: $accent-color;
+    color: var(--accent-color);
     display: inline-block;
     justify-content: center;
     padding-left: 5px;
@@ -141,19 +141,19 @@ border: none;
 color: #ffffff;
 width: 200px;
 height: 50px;
-background-color: $accent-color;
+background-color: var(--accent-color);
 border-radius: 4px;
 }
 .input-wrapper:hover .input-reg {
-fill: $accent-color;
-border-color: $accent-color;
+fill: var(--accent-color);
+border-color: var(--accent-color);
 }
 .input-line:hover .form-icons{
-fill: $accent-color;
-border-color: $accent-color;
+fill: var(--accent-color);
+border-color: var(--accent-color);
 }
 .modal-area:hover {
-border-color: $accent-color;
+border-color: var(--accent-color);
 }
 .button-modal {
     &:hover , &:focus {

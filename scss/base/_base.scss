@@ -1,7 +1,7 @@
 body {
-    color: $primary-text-color;
+    color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;
-    background-color: $button-text;
+    background-color: var(--button-text);
     font-size: 14px;
   }
   

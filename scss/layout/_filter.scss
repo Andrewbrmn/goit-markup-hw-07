@@ -2,7 +2,7 @@
         
     border-radius: 4px;
   
-    color: $secondary-text-color;
+    color: var(--secondary-text-color);
     background-color: #f5f4fa;
     border: none;
   
@@ -38,8 +38,8 @@
   
   .filter-list {
     &:hover , &:focus {
-     color: $button-text;
-    background-color: $accent-color;
+     color: var(--button-text);
+    background-color: var(--accent-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     }
