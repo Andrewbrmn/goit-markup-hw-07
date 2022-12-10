@@ -1097,9 +1097,10 @@ a.footer-webstudio {
 .icon-send {
   fill: var(--button-text);
   padding-right: 10px;
+  width: 100%;
 }
 
-.footer-input:hover {
+.footer-email__input:hover {
   border-color: var(--accent-color);
 }
 

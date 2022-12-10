@@ -169,7 +169,7 @@ color: var(--button-text);
 display:flex; 
 cursor: pointer;
 align-items: center;
-text-align: center;
+text-align: center; 
 letter-spacing: 0.06em;
 font-family: 'Roboto';
 font-style: normal;
@@ -184,8 +184,9 @@ border: none;
 .icon-send {
 fill:var(--button-text);
 padding-right: 10px;
+width: 100%;
 }
 
-.footer-input:hover {
+.footer-email__input:hover {
 border-color: var(--accent-color);
 }
