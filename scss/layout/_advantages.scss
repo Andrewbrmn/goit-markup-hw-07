@@ -6,16 +6,16 @@
     color: var(--secondary-text-color);
   }
   
-  .advantages-list {
+  .advantages__list {
     display: flex;
   }
-  .advantages-list > .item:not(:last-child) {
+  .advantages__list > .advantages__item:not(:last-child) {
     margin-right: 30px;
   }
-  .advantages-list > .advantage-icon:not(:last-child) {
+  .advantages__list > .advantage-icon:not(:last-child) {
     margin-right: 30px;
   }
-  .advantages-list  > .item {
+  .advantages__list  > .advantages__item {
     width: calc((100% - 120px) / 4);
   }
  

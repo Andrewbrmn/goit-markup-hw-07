@@ -1,4 +1,4 @@
-.what-wedo {
+.what-wedo__title {
     color: var(--secondary-text-color);
   
     font-size: 36px;
@@ -11,7 +11,7 @@
     display: flex;
     position: relative;
   }
-  h2.what-wedo {
+  h2.what-wedo__title {
     margin-bottom: 50px;
   }
   
@@ -22,11 +22,11 @@
     position: relative;
   }
   
-  .what-wedo__list > .item:not(:last-child) {
+  .what-wedo__list > .what-wedo__item:not(:last-child) {
     margin-right: 30px;
   }
   
-  .what-wedo__list > .item {
+  .what-wedo__list > .what-wedo__item {
     width: 370px;
   }
   .develop-overlay {

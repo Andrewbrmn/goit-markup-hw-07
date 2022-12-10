@@ -25,18 +25,16 @@
         <nav class="nav-studio">
           <a href="/" class="link link-webstudio"
             ><span class="logo-web">Web</span
-            ><span class="logo-studio">Studio</span></a
-          >
-
-          <ul class="site-nav item">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item">
+            ><span class="logo-studio">Studio</span></a>
+          <ul class="site-nav">
+            <li class="site-nav__item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="site-nav__item">
               <a href="./portfolio.html" class="current link">Портфоліо</a>
             </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="site-nav__item"><a href="" class="link">Контакти</a></li>
           </ul>
           <ul class="auth-nav">
-            <li class="item">
+            <li class="auth-nav__item">
               <a href="mailto:info@devstudio.com" class="link">
                 <svg class="icon-mail" width="16" height="12">
                   <use href="./img/svg cartoons/symbol-defs.svg#icon-envelope"></use>
@@ -44,7 +42,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="item">
+            <li class="auth-nav__item">
               <a  href="tel:+380961111111" class="link">
                 <svg class="icon-tel" width="10" height="16">
                   <use href="./img/svg cartoons/symbol-defs.svg#icon-smartphone"></use>
@@ -81,7 +79,7 @@
         <!-- Наші роботи -->
 
         <ul class="works-list">
-          <li class="item3">
+          <li class="work-list__item3">
             <a class="link" href="#">
               <div class="img-wrapper">
               <img class="item"
@@ -94,7 +92,7 @@
             >
               
           </li>
-          <li class="item3">
+          <li class="work-list__item3">
             <a class="link" href="#"
               > <div class="img-wrapper"><img class="item"
                 src="./img/imgmaket/img2.jpg"
@@ -107,7 +105,7 @@
               </h2>
               <p class="title-list work-text">Дизайн</p></div></a>  
           </li>
-          <li class="item3">
+          <li class="work-list__item3">
             <a class="link" href="#"
               > <div class="img-wrapper"><img class="item"
                 src="./img/imgmaket/img3.jpg"
@@ -119,7 +117,7 @@
               <p class="title-list work-text">Додаток</p></div></a>
               
           </li>
-          <li class="item3">
+          <li class="work-list__item3">
             <a class="link" href="#"
               > <div class="img-wrapper"><img class="item"
                 src="./img/imgmaket/img4.jpg"
@@ -132,7 +130,7 @@
             
               
           </li>
-          <li class="item3">
+          <li class="work-list__item3">
             <a class="link" href="#"
               > <div class="img-wrapper"><img class="item"
                 src="./img/imgmaket/img5.jpg"
@@ -143,7 +141,7 @@
               <div class="work-list-about"><h2 class="title work-list-title">Проєкт Boxes</h2>
               <p class="title-list work-text">Додаток</p></div></a>
           </li>
-          <li class="item3">
+          <li class="work-list__item3">
             <a class="link" href="#"
               > <div class="img-wrapper"><img class="item" src="./img/imgmaket/img6.jpg" alt="Монітор" width="370" />
                 <div class="item-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div></div>
@@ -151,7 +149,7 @@
               <p class="title-list work-text">Веб-сайт</p></div></a>
               
           </li>
-          <li class="item3">
+          <li class="work-list__item3">
             <a class="link" href="#"
               > <div class="img-wrapper"><img class="item" src="./img/imgmaket/img7.jpg" alt="Книга" width="370" />
                 <div class="item-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div></div>
@@ -159,7 +157,7 @@
               <p class="title-list work-text">Дизайн</p></div></a>
               
           </li>
-          <li class="item3">
+          <li class="work-list__item3">
             <a class="link" href="#"
               > <div class="img-wrapper"><img class="item" src="./img/imgmaket/img8.jpg" alt="Ярлик" width="370" />
                 <div class="item-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div></div>
@@ -167,7 +165,7 @@
               <p class="title-list work-text">Маркетинг</p></div></a>
               
           </li>
-          <li class="item3">
+          <li class="work-list__item3">
             <a class="link" href="#"
               > <div class="img-wrapper"><img class="item3" src="./img/imgmaket/img9.jpg" alt="Ноутбук" width="370" />
                 <div class="item-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div></div>
@@ -209,27 +207,28 @@
               </li>
             </ul>
           </div>
+          </div>
         </address>
         <div class="footer-link">
           <h class="footer-link__title">приєднуйтесь</h>
           <ul class="footer-link__list">
             <li class="footer-link__border">
-              <a href="#" class="footer-link__border-img">
-              <svg class="footer-link__border-color" width="20px" height="20px">
+              <a href="#" class="footer-link__img">
+              <svg class="border-color" width="20px" height="20px">
                 <use href="./img/svg cartoons/symbol-defs.svg#icon-instagram"></use>
               </svg>
               </a>
             </li>
             <li class="footer-link__border">
-              <a href="#" class="footer-link__border-img">
-              <svg class="footer-link__border-color" width="20px" height="20px">
+              <a href="#" class="footer-link__img">
+              <svg class="border-color" width="20px" height="20px">
                 <use href="./img/svg cartoons/symbol-defs.svg#icon-twitter"></use>
               </svg>
               </a>
             </li>
             <li class="footer-link__border">
-              <a href="" class="footer-link__border-img">
-              <svg class="footer-link__border-color" width="20px" height="20px">
+              <a href="" class="footer-link__img">
+              <svg class="border-color" width="20px" height="20px">
                 <use
                   href="./img/svg cartoons/symbol-defs.svg#icon-facebook"
                 ></use>
@@ -237,8 +236,8 @@
               </a>
             </li>
             <li class="footer-link__border">
-              <a href="" class="footer-link__border-img">
-              <svg class="footer-link__border-color" width="20px" height="20px">
+              <a href="" class="footer-link__img">
+              <svg class="border-color" width="20px" height="20px">
                 <use
                   href="./img/svg cartoons/symbol-defs.svg#icon-linkedin"
                 ></use>
@@ -250,12 +249,41 @@
         <div class="footer-email">
           <p class="footer-email__label">Підпишіться на розсилку</p> 
           <form name="form-footer" class="footer-email__form">
-          <input name="footer-mail" id="footer-mail" type="email" placeholder="E-mail" class="footer-email__input"></textarea>
-          <button type="submit" class="footer-email__button">Підписатися <svg widht="24" height="24" class="footer-email__icon-send"><use href="./img/svg cartoons/symbol-defs.svg#icon-send"></use></svg></button>
+          <input name="footer-mail" id="footer-mail" type="email" placeholder="E-mail" class="footer-email__input">
+          <button type="submit" class="footer-email__button">Підписатися <svg width="24" height="24" class="icon-send"><use href="./img/svg cartoons/symbol-defs.svg#icon-send"></use></svg></button>
           </form>
-        </div>
-        
+        </div> 
       </div>
+      </div>
+    </footer>
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-sign" data-modal-close><svg class="modal-button" width="18px" height="18px"><use href="./img/svg cartoons/symbol-defs.svg#icon-close"></use></svg></button>
+        <form name="form-reg" class="modal-form">
+          <p class="form-hero">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="input-line"><label for="user-name" class="modal-lable"><span>Ім'я</span></label>
+            <div class="input-wrapper"><input  id="user-name" name="user-name" type="text"  class="input-reg"><svg class="form-icons" width="12" height="12"><use href="./img/svg cartoons/symbol-defs.svg#icon-vector1"></use></svg></div>
+          </div>
+          <div class="input-line"><label for="user-tel" class="modal-lable"><span>Телефон</span></label>
+            <div class="input-wrapper"><input id="user-tel" name="user-tel" type="tel" class="input-reg"><svg class="form-icons" width="13" height="13"><use href="./img/svg cartoons/symbol-defs.svg#icon-vector2"></use></svg></div>
+          </div>
+          <div class="input-line"><label for="user-email" class="modal-lable"><span>Пошта</span></label></div>
+            <div class="input-wrapper"><input id="user-email" name="user-email" type="email" class="input-reg"><svg class="form-icons" width="15" height="12"><use href="./img/svg cartoons/symbol-defs.svg#icon-vector3"></use></svg></div>
+          </div>
+          <div class="input-line">
+            <label for="comment" class="modal-lable">Коментар</label>
+          <textarea name="comment" id="comment"  class="modal-area" placeholder="Введіть текст"></textarea>
+          <div class="input-line check-line">
+            <input type="checkbox" id="checkbox-agree" name="checkbox-agree" value="agree" class="hidden-title"> 
+            <label for="checkbox-agree" class="checkbox-agree"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="" class="link-modal">Умови договору</a></label>
+              <button class="submit" type="submit">Відправити</button>   
+          </div>
+         
+        </form>
+      </div>
+    </div>
     </footer>
   </body>
 </html>

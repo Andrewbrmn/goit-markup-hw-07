@@ -107,7 +107,7 @@ ul {
 }
 
 .logo-studiow {
-  color: var(button-text);
+  color: var(--button-text);
 }
 
 .nav-studio,
@@ -126,7 +126,7 @@ ul {
   display: flex;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -141,7 +141,7 @@ ul {
           justify-content: center;
 }
 
-.auth-nav .item:not(:last-child) {
+.auth-nav .auth-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -214,7 +214,13 @@ ul {
   color: var(--accent-color);
 }
 
-.item .link:hover, .item .link:focus {
+.site-nav__item .link:hover, .site-nav__item .link:focus {
+  color: var(--accent-color);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav__item .link:hover, .auth-nav__item .link:focus {
   color: var(--accent-color);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -430,9 +436,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   top: 55%;
-  padding-left: 12px;
-  -webkit-transform: translateX(-45%);
-          transform: translateX(-45%);
+  margin-left: 12px;
 }
 
 .modal-area {
@@ -602,21 +606,21 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.advantages-list {
+.advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.advantages-list > .item:not(:last-child) {
+.advantages__list > .advantages__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.advantages-list > .advantage-icon:not(:last-child) {
+.advantages__list > .advantage-icon:not(:last-child) {
   margin-right: 30px;
 }
 
-.advantages-list > .item {
+.advantages__list > .advantages__item {
   width: calc((100% - 120px) / 4);
 }
 
@@ -668,7 +672,7 @@ ul {
           justify-content: center;
 }
 
-.what-wedo {
+.what-wedo__title {
   color: var(--secondary-text-color);
   font-size: 36px;
   line-height: 1.1666666667;
@@ -683,7 +687,7 @@ ul {
   position: relative;
 }
 
-h2.what-wedo {
+h2.what-wedo__title {
   margin-bottom: 50px;
 }
 
@@ -694,11 +698,11 @@ h2.what-wedo {
   position: relative;
 }
 
-.what-wedo__list > .item:not(:last-child) {
+.what-wedo__list > .what-wedo__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.what-wedo__list > .item {
+.what-wedo__list > .what-wedo__item {
   width: 370px;
 }
 
@@ -769,10 +773,10 @@ h2.team {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--button-color);
+  background-color: var(--button-text);
 }
 
-.team__list .team__item-about {
+.team__list .team__about {
   padding-top: 30px;
   /* padding-bottom: 30px; */
 }
@@ -884,7 +888,7 @@ h2.team {
   /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-container-footer {
+.container-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,10 +907,6 @@ container-footer {
   font-size: 26px;
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
-}
-
-.logo-studiow {
-  color: var(--button-text);
 }
 
 a.footer-webstudio {
@@ -981,7 +981,7 @@ a.footer-webstudio {
   color: #ffffff;
 }
 
-.footer-link__border-img {
+.footer-link__img {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
@@ -992,14 +992,14 @@ a.footer-webstudio {
   display: block;
 }
 
-.footer-link__border-color {
+.border-color {
   margin: 12px;
   fill: var(--button-text);
   -webkit-transition: backgroud-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: backgroud-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link__border-img:hover {
+.footer-link__img:hover {
   background-color: var(--accent-color);
 }
 
@@ -1014,9 +1014,7 @@ a.footer-webstudio {
 }
 
 .footer-email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-left: 93px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -1072,7 +1070,7 @@ a.footer-webstudio {
 .footer-email__button {
   width: 200px;
   height: 50px;
-  background-color: var(--accent-color);
+  background-color: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1096,12 +1094,12 @@ a.footer-webstudio {
   border: none;
 }
 
-.footer-email__icon-send {
+.icon-send {
   fill: var(--button-text);
   padding-right: 10px;
 }
 
-.footer-email__input:hover {
+.footer-input:hover {
   border-color: var(--accent-color);
 }
 
